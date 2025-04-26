@@ -1,0 +1,5 @@
+authtoken: <https://bit.ly/3FNhrkZ>
+tunnels:
+  myapp:
+    proto: http
+    addr: 8000

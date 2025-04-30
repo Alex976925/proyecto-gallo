@@ -1,22 +1,20 @@
-# Proyecto Gallo - Herramienta de Auditoría Web
+# Proyecto Gallo
 
-*Proyecto Gallo* es una herramienta desarrollada con *Python* y *Flask*, diseñada para facilitar auditorías web básicas, detectar vulnerabilidades comunes y realizar pruebas de fuzzing sobre rutas y encabezados HTTP. Su propósito es apoyar a profesionales de ciberseguridad en la evaluación rápida de endpoints.
+*Mi suite personalizada para auditoría web básica con Flask y Python.*
 
-## Características principales
+Este proyecto permite realizar análisis de seguridad sobre URLs, detectando headers de seguridad, posibles fugas de datos sensibles, pruebas básicas de inyección y fuzzing sobre endpoints comunes.
 
-Interfaz web simple con Flask.
-Detección de datos sensibles en respuestas HTTP.
-Análisis de headers de seguridad.
-Pruebas básicas de inyección SQL y JavaScript (XSS).
-Fuzzing de rutas comunes y headers manipulados.
-Registro de auditorías y resultados.
+## Captura
 
+![screenshot](ruta/a/tu/captura.png) <!-- Reemplaza con la ruta real si subiste una imagen -->
 
-## Tecnologías utilizadas
+## Requisitos
 
-Python 3
-Flask
-Requests
-Rich
-Regex
-HTML/CSS (render con Jinja2)
+Instala las dependencias con:
+
+```bash
+pip install -r requirements.txt
+
+## Licencia
+
+Este proyecto está licenciado bajo los términos de la [Licencia MIT](./LICENSE).

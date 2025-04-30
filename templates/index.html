@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auditoría Web Ética</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #f2f2f2; }
+        form { margin-bottom: 20px; }
+        textarea { width: 100%; height: 300px; }
+    </style>
+</head>
+<body>
+    <h1>Herramienta de Auditoría Web</h1>
+    <form method="POST">
+        <label>URL:</label><br>
+        <input type="text" name="url" required><br><br>
+
+        <label>Método (GET o POST):</label><br>
+        <input type="text" name="method" value="GET"><br><br>
+
+        <label>Headers (formato JSON):</label><br>
+        <input type="text" name="headers" placeholder='{"Content-Type": "application/json"}'><br><br>
+
+        <label>Body (solo para POST):</label><br>
+        <textarea name="body"></textarea><br><br>
+
+        <label><input type="checkbox" name="fuzz" value="true"> Realizar Fuzzing de rutas y headers</label><br><br>
+
+        <input type="submit" value="Ejecutar Auditoría">
+    </form>
+
+    <h2>Resultado:</h2>
+    <textarea readonly>{{ resultado }}</textarea>
+</body>
+</html>
